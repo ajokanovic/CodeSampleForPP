@@ -274,22 +274,7 @@ If the **system requires multiple components from an entity**, it will first che
 
 In the update functions of a multy component system, components are retrieved by using a macro `SYSTEM_EXTRACT_COMPONENT(CMP_TYPE)` where **CMP_TYPE** is the type of the component to retrieve.
 
-
-```mermaid
-sequenceDiagram
-
-Systems ->> Components: resort component vector?
-Components --x Systems: resort_sys_flag
-Systems ->> Systems: resort if needed
-Systems ->> Components: get first comp from sys vector
-Components --x Systems: component A
-Systems ->> Components: get Entity with A
-Components --x Systems: Entity linked to A
-Systems ->> Entities: find the rest of comp from system vector
-Entities --x Systems: rest of the components linked to entity from vector
-Systems ->> Systems: update for provided components
-Systems ->> Components: set resort_sys_flag to 0
-```
+![enter image description here](https://i.ibb.co/SPCzRNJ/diagram.png)
 
 ## Example usage
 This is by no means written in stone, the structure can be changed and broken down even more. Example usage of the described system would go something like this:
