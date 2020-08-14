@@ -57,7 +57,7 @@ An example of an **entity system** would be a system that takes the **GrowthComp
 An example of a **general system** would be the system that for each component of type **A** goes through the whole list of the component **B**. These were cut from the requirement and were never implemented in this project.
 
 
-![enter image description here](https://docs.unity3d.com/Packages/com.unity.entities@0.9/manual/images/ECSBlockDiagram.png)
+![enter description here](https://docs.unity3d.com/Packages/com.unity.entities@0.9/manual/images/ECSBlockDiagram.png)
 # Project structure
 
 This project, like most of the C project, is divided into two parts. The **headers**, holding just the function definitions, constants, includes between modules and macros. And the **sources**, where everything from the headers is implemented. Specific files & directories are described below.
@@ -163,7 +163,7 @@ You can maybe look at this behavior as some form of *structure inheritance in C.
 
 > Note: this only works if the structure member order is guaranteed.
 
-![enter image description here](https://slideplayer.com/slide/8678982/26/images/13/Layout+of+Structures+in+Memory%281%29.jpg =500x400)
+![enter image description here](https://slideplayer.com/slide/8678982/26/images/13/Layout+of+Structures+in+Memory%281%29.jpg=400x300)
 #### Back to containers
 Here is the definition of the component container structure:
 
